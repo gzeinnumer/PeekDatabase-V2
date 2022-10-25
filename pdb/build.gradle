@@ -1,5 +1,6 @@
 plugins {
     id 'com.android.library'
+    id 'maven-publish'
 }
 
 android {
@@ -36,4 +37,17 @@ dependencies {
     implementation 'com.github.gzeinnumer:EasySQLiteCRUD:3.3.1'
     implementation 'com.github.gzeinnumer:EasyDialogFragment:2.1.0'
     implementation 'com.github.gzeinnumer:SimpleMaterialStyle:2.3.6'
+}
+
+afterEvaluate {
+    publishing{
+        publications{
+            reslease(MavenPublication){
+                from components.release
+                groupId = 'com.infobook'
+                artifactId = 'pdb'
+                version = '1.0'
+            }
+        }
+    }
 }
