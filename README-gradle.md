@@ -10,7 +10,6 @@ plugins {
 }
 
 ...
-
 afterEvaluate {
     publishing{
         publications{
