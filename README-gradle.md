@@ -8,12 +8,15 @@ plugins {
     id 'com.android.library'
     id 'maven-publish'
 }
+
+...
+
 afterEvaluate {
     publishing{
         publications{
             reslease(MavenPublication){
                 from components.release
-                groupId = 'com.infobook'
+                groupId = 'com.gzeinnumer'
                 artifactId = 'pdb'
                 version = '1.0'
             }
