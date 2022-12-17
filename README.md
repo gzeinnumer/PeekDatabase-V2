@@ -85,6 +85,14 @@ public SQLiteDatabase getSQLiteDB(Context context) {
 }
 ```
 
+Show spesific
+```java
+DialogTableBuilder
+    .newInstanse(this, sqLiteDatabase)
+    .addTable("table1")
+    .build();
+```
+
 ---
 # Example Code/App
 
