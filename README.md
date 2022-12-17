@@ -92,6 +92,16 @@ DialogTableBuilder
     .addTable("table1")
     .build();
 ```
+```java
+String[] tables = {
+    "table1",
+    "table2"
+};
+DialogTableBuilder
+    .newInstanse(this, GblVariabel.myDb)
+    .addTable(tables)
+    .build();
+```
 
 ---
 # Example Code/App
